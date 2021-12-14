@@ -7,15 +7,145 @@
     <meta name="author" content="Abdurakhmon Rashidov">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.6/vivus.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css" />
+    <link rel="stylesheet" href="css/app.css">
     <title>covid19 ui-landing page</title>
 </head>
 
 <body>
-    <center>
-        <svg viewBox="0 0 100 100">
-            <rect x="10" y="23"  width="50" height="50"/>
-        </svg>
-    </center>
+    <nav class="navbar box is-transparent pl-5 pr-5">
+        <div class="navbar-brand pl-5">
+            <a class="navbar-item" href="https://bulma.io">
+                <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+            </a>
+            <div class="navbar-burger" data-target="navbarExampleTransparentExample">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div id="navbarExampleTransparentExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="https://bulma.io/">
+              Home
+            </a>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link" href="https://bulma.io/documentation/overview/start/">
+                Docs
+              </a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item" href="https://bulma.io/documentation/overview/start/">
+                  Overview
+                </a>
+                        <a class="navbar-item" href="https://bulma.io/documentation/overview/modifiers/">
+                  Modifiers
+                </a>
+                        <a class="navbar-item" href="https://bulma.io/documentation/columns/basics/">
+                  Columns
+                </a>
+                        <a class="navbar-item" href="https://bulma.io/documentation/layout/container/">
+                  Layout
+                </a>
+                        <a class="navbar-item" href="https://bulma.io/documentation/form/general/">
+                  Form
+                </a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item" href="https://bulma.io/documentation/elements/box/">
+                  Elements
+                </a>
+                        <a class="navbar-item is-active" href="https://bulma.io/documentation/components/breadcrumb/">
+                  Components
+                </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="field is-grouped">
+                        <p class="control">
+                            <a class="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet" data-social-target="https://bulma.io" target="_blank" href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=https://bulma.io&amp;via=jgthms">
+                                <span class="icon">
+                      <i class="fab fa-twitter"></i>
+                    </span>
+                                <span>
+                      Tweet
+                    </span>
+                            </a>
+                        </p>
+                        <p class="control">
+                            <a class="button is-primary" href="https://github.com/jgthms/bulma/releases/download/0.9.3/bulma-0.9.3.zip">
+                                <span class="icon">
+                      <i class="fas fa-download"></i>
+                    </span>
+                                <span>Download</span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-6">
+                    <span>COVID19 - 2020</span>
+                    <div class="title">Оставайтесь дома чтобы остановить вирус</div>
+                    <div class="subtitle mt-3">
+                        Дальнейшее распространение инфекции и перспективы всей страны во многом сейчас зависят от нас с вами. Ничего сложного – просто соблюдайте режим самоизоляции, введенный в большинстве регионов Узбекистана.
+                    </div>
+                    <a href="#" class="button is-danger is-light is-outlined is-rounded">
+                        Симптомы
+                    </a>
+                </div>
+                <div class="column is-6">
+                    <img src="img/ban.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-6">
+                    <span>COVID19 - 2020</span>
+                    <div class="title">Симптомы коронавируса </div>
+                    <div class="subtitle mt-3">
+                        В подавляющем большинстве случаев эти симптомы связаны не с коронавирусом, а с обычной ОРВИ.
+                    </div>
+                    <div class="content">
+                        <h4 class="is-size-5">
+                            Основные симптомы коронавируса
+                        </h4>
+                        <ul>
+                            <li>высокая температура тела</li>
+                            <li>кашель (сухой или с небольшим количеством мокроты)</li>
+                            <li>одышка</li>
+                            <li>боль в мышцах</li>
+                            <li>утомляемость</li>
+                            <li>нарушение или потеря обоняния</li>
+                            <li>потеря вкуса</li>
+                        </ul>
+                        <h4 class="is-size-5 mt-3">
+                            Редкие симптомы коронавируса
+                        </h4>
+                        <ul>
+                            <li>головная боль</li>
+                            <li>заложенность грудной клетки</li>
+                            <li>кровохарканье</li>
+                            <li>диарея</li>
+                            <li>тошнота, рвота</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="column is-6">
+                    <img src="img/ban.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="js/app.js"></script>
 </body>
 
