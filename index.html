@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.6/vivus.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css" />
+    <link rel="stylesheet" href="css/splide.min.css">
     <link rel="stylesheet" href="css/app.css">
     <title>covid19 ui-landing page</title>
 </head>
@@ -87,15 +88,17 @@
             </div>
         </div>
     </nav>
-    <section class="section">
+    <section class="section" id="banner">
         <div class="container">
             <div class="columns">
                 <div class="column is-6">
-                    <span>COVID19 - 2020</span>
+                    <span class="has-text-danger">COVID19 - 2020</span>
                     <div class="title">Оставайтесь дома чтобы остановить вирус</div>
+                    <br>
                     <div class="subtitle mt-3">
                         Дальнейшее распространение инфекции и перспективы всей страны во многом сейчас зависят от нас с вами. Ничего сложного – просто соблюдайте режим самоизоляции, введенный в большинстве регионов Узбекистана.
                     </div>
+                    <br><br>
                     <a href="#" class="button is-danger is-light is-outlined is-rounded">
                         Симптомы
                     </a>
@@ -110,7 +113,14 @@
         <div class="container">
             <div class="columns">
                 <div class="column is-6">
-                    <span>COVID19 - 2020</span>
+                    <img src="img/boy.svg" width="500" alt="">
+                    <h4 class="is-size-6 mt-3">
+                        Симптомы могут проявиться в течение <span class="has-text-danger">14 дней</span> после контакта с инфекционным больным. Симптомы во многом сходны со многими респираторными заболеваниями, часто имитируют обычную простуду, могут
+                        походить на грипп.
+                    </h4>
+                </div>
+                <div class="column is-6">
+                    <span class="has-text-danger">COVID19 - 2020</span>
                     <div class="title">Симптомы коронавируса </div>
                     <div class="subtitle mt-3">
                         В подавляющем большинстве случаев эти симптомы связаны не с коронавирусом, а с обычной ОРВИ.
@@ -138,14 +148,42 @@
                             <li>диарея</li>
                             <li>тошнота, рвота</li>
                         </ul>
+
                     </div>
                 </div>
-                <div class="column is-6">
-                    <img src="img/ban.svg" alt="">
-                </div>
+
             </div>
         </div>
     </section>
+    <section class="section">
+        <div class="container">
+            <div class="">
+                <div class="title">
+                    Основные симптомы <span class="has-text-danger">коронавируса</span>
+                </div>
+            </div>
+            <div class="splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <img class="m-3" src="img/hurry.png" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img class="m-3" src="img/hurry2.png" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img class="m-3" src="img/kashel.png" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img class="m-3" src="img/temp.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <script src="js/splide.min.js"></script>
     <script src="js/app.js"></script>
 </body>
 

@@ -2,3 +2,9 @@
 body {
     font-family: 'Red Hat Display', sans-serif;
 }
+
+#banner {
+    background-image: url("../img/virus.png");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
